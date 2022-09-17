@@ -220,19 +220,7 @@ function carritoCompras(){
     let porcentajeDescuento = precioFinal * precioD
     let descuentoTotal = precioFinal - porcentajeDescuento
 
-    //Mensaje hacia el usuario segun la compra
-    console.log(`Su Carrito de Compras Contiene:
-    \n- ${categoriaR} ${productoR} $${precioR}
-    \n- ${categoriaCam} ${productoCam} $${precioCam}
-    \n- ${categoriaC} ${productoC} $${precioC}
-    \n- ${categoriaP} ${productoP} $${precioP}
-    \n- ${categoriaPA} ${productoPA} $${precioPA}
-    \n- ${categoriaCa} ${productoCa} $${precioCa}
-    Subtotal: ${carritoCompras2}
-    \n Iva: 21% ${impuesto} Precio Final: ${precioFinal}
-    \nDescuento: ${porcentajeDescuento} 
-    \n Precio con descuento: ${descuentoTotal}`)
-
+    //Resultado de compra impreso en HTML 
     titulo.innerText = "Tienda Online Your Style"
     subTitulo.remove()
     detalle.remove()
